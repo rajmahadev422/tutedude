@@ -7,10 +7,10 @@
  ```
 ## How to run
 ```
- npm i nodemon
+ npm i
  npm run dev
  ```
- - Use nodemon for refresh problem.
+ - Using nodemon for refresh problem.
 
 ## Structure
   - header
@@ -29,4 +29,5 @@
  ![about-us](img/about-us.png)
  - `'/contact-us'` for Contact us
  ![contact-us](img/contact-us.png)
+
 
