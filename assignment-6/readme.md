@@ -20,7 +20,7 @@
 ## routes
  - **All are get mehtod**
  - `'/'` for dashboard.
-  ![dashboard](img\dashboard.png)
+  ![dashboard](img/dashboard.png)
  - `'/home'` for home
  ![home](img/home.png)
  - `'/services'` for Services
@@ -29,3 +29,4 @@
  ![about-us](img/about-us.png)
  - `'/contact-us'` for Contact us
  ![contact-us](img/contact-us.png)
+
