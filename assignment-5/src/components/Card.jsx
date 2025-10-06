@@ -6,8 +6,8 @@ const Card = ({ image, title }) => {
         src={image}
         alt={title}
         onError={(e) => {
-          e.target.onerror = null; // Prevent infinite loop
-          e.target.src = "https://i.imgur.com/QkIa5tT.jpeg"; // Fallback image path
+          e.target.onerror = null;
+          e.target.src = "https://i.imgur.com/QkIa5tT.jpeg";
         }}
         className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
       />
@@ -19,3 +19,4 @@ const Card = ({ image, title }) => {
 };
 
 export default Card;
+
