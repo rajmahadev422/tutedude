@@ -3,6 +3,8 @@
 `useFetch` is a reusable **custom React Hook** designed to handle API data fetching efficiently.  
 It simplifies the logic of fetching, loading states, and error handling inside React components.
 
+## Live Site
+[React](https://velvety-platypus-38ae08.netlify.app/)
 ---
 
 ## 🚀 Features
