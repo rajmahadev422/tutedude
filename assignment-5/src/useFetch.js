@@ -6,30 +6,26 @@ function useFetch(url) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    let isMounted = true;
 
     setLoading(true);
     fetch(url)
       .then((res) => {
-        if (!res.ok) throw new Error("Failed to fetch");
+        if (!res.ok) setError("Failed to fetch");
         return res.json();
       })
       .then((data) => {
-        if (isMounted) setData(data);
+        setData(data);
       })
       .catch((err) => {
-        if (isMounted) setError(err.message);
+         setError(err.message);
       })
       .finally(() => {
-        if (isMounted) setLoading(false);
+         setLoading(false);
       });
-
-    return () => {
-      isMounted = false;
-    };
   }, [url]);
 
   return { data, loading, error };
 }
 
 export default useFetch;
+
