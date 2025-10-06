@@ -58,7 +58,7 @@ app.post('/add-item', (req, res) => )
   "todo_id": "todo_06_10_2025_1234",
   "title": "making assignment-7",
   "date": "06-10-2025",
-  "time": "19:20"
+  "time": "10:20"
 }
 ```
 
@@ -75,7 +75,7 @@ app.get('/get-items/{user-id}', (req, res) => )
   "todo_id": "todo_06_10_2025_1234",
   "title": "making assignment-7",
   "date": "06-10-2025",
-  "time": "19:20"
+  "time": "10:20"
 }
 ]
 ```
@@ -130,4 +130,5 @@ User first register himself and then login, we sent user-id.\
 User request for todo item , but there is no any item in the list, so we sent an empty array of list.\
 Then user add any todo item in the todo list by `/add-item`.\
 After completing the work , user update the status to complete by `/update-status`.
+
 
