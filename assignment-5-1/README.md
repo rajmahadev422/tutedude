@@ -1,10 +1,15 @@
 # useFetch
 [Frontend link](https://sparkling-dodol-08bc93.netlify.app/)
+## How to start
+```
+npm i
+npm run dev
+```
 ## Features
 - return data format if there is no error
 ```js
 data = {
-  urlData: [...data],
+  urlData,
   error: null
 }
 ```
