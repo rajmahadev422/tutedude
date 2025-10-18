@@ -17,6 +17,7 @@ function useFetch(url) {
         setData(products);
         setLoading(false);
       } catch (err) {
+        setLoading(false);
         setError(err.message);
       }
     };
@@ -27,3 +28,4 @@ function useFetch(url) {
 }
 
 export default useFetch;
+
