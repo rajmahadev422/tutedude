@@ -27,6 +27,7 @@ function useFetch(url) {
         setData(products);
         setLoading(false);
       } catch (err) {
+        setLoading(false);
         setError(err.message);
       }
     };
